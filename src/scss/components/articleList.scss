@@ -1,0 +1,59 @@
+.article-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
+
+.article {
+  background-color: #fff;
+
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  p {
+    color: #555;
+  }
+
+  a {
+    display: inline-block;
+    background-color: #fff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 1px;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+}
