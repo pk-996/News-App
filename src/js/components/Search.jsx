@@ -30,7 +30,7 @@ function Search({ onSearch }) {
         onChange={(e) => setSearchTerm(e.target.value)}
         onKeyPress={handleKeyPress}
       />
-      {loading && <CirclesWithBar color="#007bff" size={20} />}
+      {loading && <CirclesWithBar color="#007bff" size={5} />}
     </div>
   );
 }
