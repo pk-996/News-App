@@ -6,12 +6,8 @@ import config from "../js/config/config.json";
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
 
-  const fetchArticles = async (query, count) => {
-  };
-
-  const handleSearch = (searchTerm) => {
-    setSearchTerm(searchTerm);
-    fetchArticles(searchTerm, 10);
+  const handleSearch = (value) => {
+    setSearchTerm(value);
   };
 
   return (
